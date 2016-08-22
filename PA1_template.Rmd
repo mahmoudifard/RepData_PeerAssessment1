@@ -55,8 +55,6 @@ steps <- activity %>%
 
 **Make a histogram of the total number of steps taken each day**
 ```{r}
-##qplot(x = date, y = steps, data = steps, main = "Total numbers of Steps per", xlab ##= "Dates",ylab = "Steps")
-##Steps<- steps$steps
 ggplot(steps, aes(x=date, y = steps))+geom_bar(stat="identity") +xlab("Dates")+ ylab("Steps")+ labs(title= "Total numbers of Steps per day")
 ```
 
